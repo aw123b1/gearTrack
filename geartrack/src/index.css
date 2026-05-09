@@ -1,0 +1,61 @@
+/* ── Google Fonts ─────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Assistant:wght@300;400;600;700&display=swap');
+
+/* ── Tailwind v4 ──────────────────────────────────────────────────────────── */
+@import "tailwindcss";
+
+/* ── Design-system tokens (available as Tailwind utilities) ───────────────── */
+@theme {
+  /* Colors */
+  --color-primary:    #003366;
+  --color-primary-light: #00478a;
+  --color-primary-dark:  #002244;
+
+  --color-secondary:  #4A90E2;
+  --color-secondary-light: #72aaeb;
+  --color-secondary-dark:  #2a70c2;
+
+  --color-accent:     #FF8C00;
+  --color-accent-light: #ffaa3d;
+  --color-accent-dark:  #cc7000;
+
+  --color-background: #F5F7FA;
+  --color-surface:    #FFFFFF;
+  --color-text:       #1A1A1A;
+  --color-text-muted: #6B7280;
+  --color-border:     #E2E8F0;
+
+  /* Typography */
+  --font-heading: 'Heebo', system-ui, sans-serif;
+  --font-body:    'Assistant', system-ui, sans-serif;
+
+  /* Border radius */
+  --radius-base: 12px;
+  --radius-sm:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+}
+
+/* ── Base styles ──────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  margin: 0;
+}
