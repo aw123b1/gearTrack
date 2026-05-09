@@ -1,6 +1,6 @@
 import { Package, UserCircle } from 'lucide-react'
 
-export default function TopNavbar() {
+export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary text-white h-14 flex items-center justify-between px-4 shadow-md">
       <div className="flex items-center gap-2">
