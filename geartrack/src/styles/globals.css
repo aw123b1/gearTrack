@@ -1,10 +1,5 @@
-/* ── Google Fonts ─────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Assistant:wght@300;400;600;700&display=swap');
-
-/* ── Tailwind v4 ──────────────────────────────────────────────────────────── */
 @import "tailwindcss";
 
-/* ── Design-system tokens (available as Tailwind utilities) ───────────────── */
 @theme {
   /* Colors — Primary (Deep Blue) */
   --color-primary:       #003366;
@@ -39,13 +34,8 @@
   --radius-xl:   24px;
 }
 
-/* ── Base styles ──────────────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
 }
 
 body {
