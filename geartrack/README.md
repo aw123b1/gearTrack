@@ -1,16 +1,35 @@
-# React + Vite
+<div dir="rtl">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GearTrack - מערכת חכמה לניהול מלאי מחשבים
 
-Currently, two official plugins are available:
+## סקירה כללית
+GearTrack היא מערכת רשת (Web App) לניהול ומעקב אחר מלאי חומרה ומחשבים (חדשים ומשומשים). המערכת מאפשרת לצוות החנות והמחסן להוסיף ציוד, לעדכן סטטוס מלאי, לסרוק מספרים סידוריים ולתעד את המצב הפיזי של כל מחשב בזמן אמת דרך המובייל או המחשב האישי.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## איזו בעיה הפרויקט פותר?
+ניהול מלאי חומרה, ובמיוחד מחשבים ניידים יד שנייה או מחודשים, דורש מעקב קפדני אחרי מספרים סידוריים (Serial Numbers), מפרטים טכניים מדויקים ומצב פיזי (כגון שריטות או פגמים קוסמטיים). רישום ידני או שימוש בגיליונות אקסל מיושנים יוצרים בעיות סנכרון קשות בין הטכנאים במחסן לבין חנות המכירות, מובילים לטעויות הקלדה ומקשים על מעקב היסטורי. המערכת מרכזת הכל במקום אחד, פותרת את חוסר הסנכרון ומונעת טעויות אנוש.
 
-## React Compiler
+## קהל היעד
+המערכת מיועדת למנהלי מעבדות מחשבים, בעלי חנויות ציוד קצה וטכנאים שעובדים פיזית במחסן. המשתמש העיקרי הוא מנהל המלאי או הטכנאי שעומד מול עמדת העבודה עם מחשב שהתקבל, וצריך להזין אותו מיד למערכת, לעדכן את הסטטוס שלו או לתעד אותו – תוך תאימות מלאה לעבודה מהירה ונוחה מהטלפון הנייד במחסן.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## מתחרים ובידול
+* **הפתרונות הקיימים (המתחרים):** גיליונות Excel / Google Sheets, קבוצות וואטסאפ פנימיות לתיעוד משלוחים, רישום ידני על גבי מדבקות, או מערכות ERP כבדות ומסורבלות שמיועדות לתאגידי ענק ועולות הון.
+* **הבידול שלנו:** בניגוד לאקסל המסורבל לתפעול במובייל, GearTrack מותאמת מראש לעבודה מהנייד ומאפשרת להעלות תמונה של המחשב ישירות מהמצלמה כדי לתעד פגמים פיזיים בזמן אמת (פיצ'ר קריטי לחומרת יד שנייה). היא כוללת ניהול הרשאות מאובטח (Role-Based Access) ומציגה ממשק נקי, מהיר וממוקד לניהול חומרה ללא סיבוכים מיותרים.
 
-## Expanding the ESLint configuration
+## שירותים חיצוניים ואינטגרציות
+| שירות חיצוני | סוג השירות | תפקיד ושימוש במערכת |
+| :--- | :--- | :--- |
+| **Vercel** | שירות אחסון ענן (Deployment) | אירוח האתר החי, הרצת הפרונט-אנד בצורה מהירה ויציבה, וסנכרון אוטומטי מול GitHub. |
+| **Supabase Database** | בסיס נתונים (PostgreSQL) | שמירה, ניהול ושליפה של כל נתוני המלאי, המחשבים והמשתמשים בזמן אמת. |
+| **Supabase Auth** | אימות משתמשים (Authentication) | ניהול הרשאות, התחברות מאובטחת של עובדים והגנה על המידע במערכת. |
+| **Supabase Storage** | אחסון קבצים (Bucket) | שמירת תמונות המחשבים והציוד המועלים ישירות מהמצלמה או מהמחשב. |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## קישורים שימושיים
+* **גרסה חיה של הפרויקט:** https://gear-track-seven.vercel.app
+* **קישור לקוד ב-GitHub:** [הדבק כאן את הקישור לריפו הנוכחי שלך]
+
+## נתוני התחברות לבדיקה (Demo)
+כדי שהבוחן יוכל להתחבר ולבדוק את זרימת המערכת מקצה לקצה, ניתן להשתמש בחשבון הניסיון הבא:
+* **אימייל:** `test@example.com` *(החלף באימייל האמיתי שיצרת ב-Supabase Auth)*
+* **סיסמה:** `123456` *(החלף בסיסמה האמיתית שהגדרת למשתמש הבדיקה)*
+
+</div>
